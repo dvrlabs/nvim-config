@@ -44,11 +44,10 @@ git clone https://github.com/dvrlabs/nvim-config ~/.config/nvim
 
 ### Setup
 
-#### PYLSP completions
+#### Ruff-lsp completions
 
-To get proper completions with python (pylsp) in neovim
-
-edit: $HOME/.local/share/nvim/mason/packages/python-lsp-server/venv/pyvenv.cfg
+To get proper completions with ruff-lsp in neovim
+edit: $HOME/.local/share/nvim/mason/packages/ruff-lsp/venv/pyvenv.cfg
 
 set `include-system-site-packages = true`
 
