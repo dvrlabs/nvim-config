@@ -93,6 +93,13 @@ return {
     {
         'echasnovski/mini.statusline',
         version = '*',
+        init = function()
+            local statusline = require 'mini.statusline'
+            ---@diagnostic disable-next-line: duplicate-set-field
+            statusline.section_location = function()
+                return '%2l:%-2v'
+            end
+        end,
         opts = {},
     },
 
