@@ -39,5 +39,12 @@ k('n', '<leader>p', '<cmd>Lazy<CR>', { desc = '[P]ackage Manager' })
 k('n', '<leader>nh', '<cmd>NoiceHistory<CR>', { desc = '[H]istory' })
 k('n', '<leader>nd', '<cmd>NoiceDismiss<CR>', { desc = '[D]ismiss Messages' })
 k('n', '<leader>t', ':ToggleTerm<CR>', { desc = '[T]erminal' })
-
+k('n', '<leader>Ta', ':TodoTelescope<CR>', { desc = '[A]ll' })
+k('n', '<leader>Tt', ':TodoTelescope keywords=TODO<CR>', { desc = '[T]odo' })
+k('n', '<leader>Tf', ':TodoTelescope keywords=FIX<CR>', { desc = '[F]ix' })
+k('n', '<leader>Tw', ':TodoTelescope keywords=WARN<CR>', { desc = '[W]arn' })
+k('n', '<leader>Th', ':TodoTelescope keywords=HACK<CR>', { desc = '[H]ack' })
+k('n', '<leader>Tn', ':TodoTelescope keywords=NOTE<CR>', { desc = '[N]ote' })
+k('n', '<leader>Tp', ':TodoTelescope keywords=PERF<CR>', { desc = '[P]erf' })
+k('n', '<leader>Ts', ':TodoTelescope keywords=TEST<CR>', { desc = 'Te[s]t' })
 -- vim: ts=2 sts=2 sw=2 et

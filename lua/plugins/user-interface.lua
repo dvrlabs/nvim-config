@@ -79,6 +79,7 @@ return {
 
             local w = require('which-key').register
             w { ['<leader>n'] = { name = '[N]otifications', _ = 'which_key_ignore' } }
+            w { ['<leader>T'] = { name = '[T]odo Comments', _ = 'which_key_ignore' } }
         end,
     },
 

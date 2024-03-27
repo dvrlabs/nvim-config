@@ -1,7 +1,7 @@
 return {
     'dvrlabs/takeout.nvim',
     opts = {
-        -- INFO:
+        -- INFO: takeout modifies usual vim functionality...
         -- This will disable ',' normal functionality
         -- Which is going backwards on 'f' find.
         -- ';' to move forward on 'f' find still works.
