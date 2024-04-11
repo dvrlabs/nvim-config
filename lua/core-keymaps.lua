@@ -1,5 +1,6 @@
 -- [[ Core Keymaps ]]
 local k = vim.keymap.set
+local t = require('takeout').bag
 
 -- Escapes
 k('n', '<Esc>', '<cmd>nohlsearch<CR>', { silent = true, desc = 'Clear highlight on search' })
@@ -34,10 +35,10 @@ k('n', '<leader>9', '<Cmd>BufferGoto 9<CR>', { desc = 'which_key_ignore', norema
 k('n', '<leader>0', '<Cmd>BufferLast<CR>', { desc = 'which_key_ignore', noremap = true, silent = true })
 
 -- Plugins
-k('n', '<leader>m', '<cmd>MarkdownPreview<CR>', { desc = '[M]arkdown Preview' })
-k('n', '<leader>p', '<cmd>Lazy<CR>', { desc = '[P]ackage Manager' })
-k('n', '<leader>nh', '<cmd>NoiceHistory<CR>', { desc = '[H]istory' })
-k('n', '<leader>nd', '<cmd>NoiceDismiss<CR>', { desc = '[D]ismiss Messages' })
+k('n', '<leader>m', '<Cmd>MarkdownPreview<CR>', { desc = '[M]arkdown Preview' })
+k('n', '<leader>p', '<Cmd>Lazy<CR>', { desc = '[P]ackage Manager' })
+k('n', '<leader>nh', '<Cmd>NoiceHistory<CR>', { desc = '[H]istory' })
+k('n', '<leader>nd', '<Cmd>NoiceDismiss<CR>', { desc = '[D]ismiss Messages' })
 k('n', '<leader>t', ':ToggleTerm<CR>', { desc = '[T]erminal' })
 k('n', '<leader>Ta', ':TodoTelescope<CR>', { desc = '[A]ll' })
 k('n', '<leader>Tt', ':TodoTelescope keywords=TODO<CR>', { desc = '[T]odo' })
