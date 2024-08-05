@@ -21,6 +21,7 @@ k('n', '<leader><Right>', '<Cmd>BufferMoveNext<CR>', { desc = '[→] Swap Buffer
 k('n', '<leader><leader>', '<Cmd>BufferPick<CR>', { desc = '[ ] Pick Buffer ', noremap = true, silent = true })
 k('n', '<leader>w', '<Cmd>w<CR><Cmd>BufferClose<CR>', { desc = '[W]rite Buffer && Close', noremap = true, silent = true })
 k('n', '<leader>c', '<Cmd>BufferClose<CR>', { desc = '[C]lose Buffer', noremap = true, silent = true })
+k('n', '<leader>C', '<Cmd>BufferClose!<CR>', { desc = 'Forcibly [C]lose Buffer', noremap = true, silent = true })
 k('n', '<leader>q', '<Cmd>BufferCloseAllButCurrentOrPinned<CR>', { desc = '[Q]uit other buffers', noremap = true, silent = true })
 k('n', '<leader>i', '<Cmd>BufferPin<CR>', { desc = 'P[i]n Buffer', noremap = true, silent = true })
 k('n', '<leader>1', '<Cmd>BufferGoto 1<CR>', { desc = 'which_key_ignore', noremap = true, silent = true })

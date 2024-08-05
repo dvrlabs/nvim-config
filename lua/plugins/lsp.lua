@@ -74,8 +74,8 @@ return {
                     --  Useful when your language has ways of declaring types without an actual implementation.
                     k('gI', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
 
-                    local w = require('which-key').register
-                    w { ['<leader>l'] = { name = '[L]sp', _ = 'which_key_ignore' } }
+                    local w = require('which-key').add
+                    w { '<leader>l', group = '[L]sp' }
 
                     local takeout = require 'takeout'
                     takeout.bag('n', '<leader>lp', vim.diagnostic.goto_prev, { desc = 'Go to [P]revious diagnostic message' })
@@ -144,6 +144,7 @@ return {
                 -- pip install ruff-lsp
                 ruff_lsp = {},
                 clangd = {},
+                jdtls = {},
                 -- gopls = {},
                 -- pyright = {},
                 -- rust_analyzer = {},

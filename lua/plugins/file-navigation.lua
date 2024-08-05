@@ -75,8 +75,8 @@ return {
             pcall(require('telescope').load_extension, 'fzf')
             pcall(require('telescope').load_extension, 'ui-select')
 
-            local w = require('which-key').register
-            w { ['<leader>s'] = { name = '[S]earch', _ = 'which_key_ignore' } }
+            local w = require('which-key').add
+            w { '<leader>s', group = '[S]earch' }
 
             -- See `:help telescope.builtin`
             local b = require 'telescope.builtin'
