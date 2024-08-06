@@ -36,7 +36,7 @@ k('n', '<leader>9', '<Cmd>BufferGoto 9<CR>', { desc = 'which_key_ignore', norema
 k('n', '<leader>0', '<Cmd>BufferLast<CR>', { desc = 'which_key_ignore', noremap = true, silent = true })
 
 -- Plugins
-k('n', '<leader>m', '<Cmd>MarkdownPreview<CR>', { desc = '[M]arkdown Preview' })
+k('n', '<leader>m', '<Cmd>Markview toggleAll<CR>', { desc = '[M]arkview toggle all' })
 k('n', '<leader>p', '<Cmd>Lazy<CR>', { desc = '[P]ackage Manager' })
 k('n', '<leader>nh', '<Cmd>NoiceHistory<CR>', { desc = '[H]istory' })
 k('n', '<leader>nd', '<Cmd>NoiceDismiss<CR>', { desc = '[D]ismiss Messages' })
