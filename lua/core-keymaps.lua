@@ -36,12 +36,6 @@ k('n', '<leader>9', '<Cmd>BufferGoto 9<CR>', { desc = 'which_key_ignore', norema
 k('n', '<leader>0', '<Cmd>BufferLast<CR>', { desc = 'which_key_ignore', noremap = true, silent = true })
 
 -- Plugins
-local toggle_markview = function()
-    local current_buffer_number = vim.api.nvim_get_current_buf()
-    vim.cmd('Markview toggle ' .. current_buffer_number)
-end
-
-k('n', '<leader>m', toggle_markview, { desc = '[M]arkview toggle all' })
 k('n', '<leader>p', '<Cmd>Lazy<CR>', { desc = '[P]ackage Manager' })
 k('n', '<leader>nh', '<Cmd>NoiceHistory<CR>', { desc = '[H]istory' })
 k('n', '<leader>nd', '<Cmd>NoiceDismiss<CR>', { desc = '[D]ismiss Messages' })

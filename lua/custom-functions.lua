@@ -37,3 +37,11 @@ local substitute_prompt_full = function()
 end
 
 vim.keymap.set('n', '<leader>R', substitute_prompt_full, { desc = '[R]eplace word defined' })
+
+-- only way this works currently
+local toggle_markview = function()
+    local current_buffer_number = vim.api.nvim_get_current_buf()
+    vim.cmd('Markview toggle ' .. current_buffer_number)
+end
+
+vim.keymap.set('n', '<leader>m', toggle_markview, { desc = '[M]arkview toggle buffer' })
