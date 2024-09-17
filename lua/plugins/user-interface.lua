@@ -41,11 +41,17 @@ return {
         lazy = false,
         priority = 1000,
         config = function()
-            -- vim.g.everforest_background = 'hard'
+            vim.g.everforest_background = 'medium'
             vim.g.everforest_enable_italic = true
             vim.cmd.hi 'Comment gui=none'
             vim.cmd.colorscheme 'everforest'
         end,
+    },
+
+    {
+        'xiyaowong/nvim-transparent',
+        lazy = false,
+        priority = 1000,
     },
 
     -- Notification UI
