@@ -48,4 +48,6 @@ k('n', '<leader>Th', ':TodoTelescope keywords=HACK<CR>', { desc = '[H]ack' })
 k('n', '<leader>Tn', ':TodoTelescope keywords=NOTE<CR>', { desc = '[N]ote' })
 k('n', '<leader>Tp', ':TodoTelescope keywords=PERF<CR>', { desc = '[P]erf' })
 k('n', '<leader>Ts', ':TodoTelescope keywords=TEST<CR>', { desc = 'Te[s]t' })
+k('n', '<leader>o', ':TransparentToggle<CR>', { desc = '[O]pacity/Transparent' })
+
 -- vim: ts=2 sts=2 sw=2 et
