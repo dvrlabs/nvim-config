@@ -142,10 +142,12 @@ return {
             --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
             local servers = {
 
+                bashls = {},
+
                 -- pip install ruff-lsp
-                ruff_lsp = {
+                ruff = {
                     on_attach = function(client, bufnr)
-                        if client.name == 'ruff_lsp' then
+                        if client.name == 'ruff' then
                             -- Disable hover in favor of basedpyright
                             client.server_capabilities.hoverProvider = false
                         end

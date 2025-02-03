@@ -59,6 +59,7 @@ return {
                     'toml',
                     'xml',
                     'yaml',
+                    'latex',
                     'dockerfile',
                 },
                 -- Autoinstall languages that are not installed
